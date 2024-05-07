@@ -4,6 +4,7 @@
 * {
   font-family: "Crimson Text", serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .button {
@@ -15,6 +16,17 @@
 
 #body {
   background-color: #fadadd;
+}
+
+h3{
+  font-size: 1.7em;
+}
+
+header{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 3rem;
 }
 
 header h1 {
@@ -31,13 +43,100 @@ footer {
   background-color: #c79197;
   color: white;
   overflow: hidden;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
 }
 
-.img:hover,
+img:hover,
 button:hover {
   opacity: 0.5;
 }
 
 .parrafo{
-  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2em;
+}
+
+.columna-texto{
+  line-height: 2em;
+}
+
+
+/* // New CSS // */
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grupo-imagenes {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.imagen {
+  max-width: 95%;
+  height: auto;
+  border: 3px solid white;
+}
+
+.mendoza{
+  font-size: 1.5em ;
+  text-align: center;
+  font-weight: 800;
+}
+
+.columna-img{
+  margin: auto;
+}
+
+.text{
+  font-size: 1.3rem;
+}
+
+@media (min-width: 576px) {
+
+  .columna-img {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .parrafo{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .columna-img {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .mendoza{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .columna-img {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .parrafo{
+    font-size: 1.5em;
+  }
 }
